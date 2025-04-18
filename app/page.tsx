@@ -50,18 +50,54 @@ const projects = [
 
 // Tech stack data
 const techStack = [
-  { name: "Figma", icon: "/placeholder.svg?height=48&width=48" },
-  { name: "Bootstrap", icon: "/placeholder.svg?height=48&width=48" },
-  { name: "JavaScript", icon: "/placeholder.svg?height=48&width=48" },
-  { name: "Next.js", icon: "/placeholder.svg?height=48&width=48" },
-  { name: "Tailwind", icon: "/placeholder.svg?height=48&width=48" },
-  { name: "PHP", icon: "/placeholder.svg?height=48&width=48" },
-  { name: "Java", icon: "/placeholder.svg?height=48&width=48" },
-  { name: "Python", icon: "/placeholder.svg?height=48&width=48" },
-  { name: "MySQL", icon: "/placeholder.svg?height=48&width=48" },
-  { name: "Laravel", icon: "/placeholder.svg?height=48&width=48" },
-  { name: "CI/CD", icon: "/placeholder.svg?height=48&width=48" },
-  { name: "Linux", icon: "/placeholder.svg?height=48&width=48" },
+  {
+    name: "Figma",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg?height=48&width=48",
+  },
+  {
+    name: "Bootstrap",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg?height=48&width=48",
+  },
+  {
+    name: "JavaScript",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg?height=48&width=48",
+  },
+  {
+    name: "Next.js",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg?height=48&width=48",
+  },
+  {
+    name: "Tailwind",
+    icon: "https://tailwindcss.com/_next/static/media/tailwindcss-mark.d52e9897.svg?height=48&width=48",
+  },
+  {
+    name: "PHP",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg?height=48&width=48",
+  },
+  {
+    name: "Java",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg?height=48&width=48",
+  },
+  {
+    name: "Python",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg?height=48&width=48",
+  },
+  {
+    name: "MySQL",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg?height=48&width=48",
+  },
+  {
+    name: "Laravel",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg?height=48&width=48",
+  },
+  {
+    name: "CI/CD",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/githubactions/githubactions-original.svg?height=48&width=48",
+  },
+  {
+    name: "Linux",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg?height=48&width=48",
+  },
 ];
 
 export default function Portfolio() {
@@ -145,7 +181,7 @@ export default function Portfolio() {
               }}
             >
               <Image
-                src="/placeholder.svg?height=120&width=120"
+                src="/foto_formal.jpg?height=120&width=120"
                 alt="Profile"
                 width={60}
                 height={60}
@@ -202,7 +238,10 @@ export default function Portfolio() {
               className="rounded-full group transition-all duration-300 hover:bg-blue-500 hover:text-white hover:border-blue-500"
               asChild
             >
-              <Link href="/placeholder.svg" download="Tio_Andriyanto_CV.pdf">
+              <Link
+                href="https://drive.google.com/file/d/1J0XgtMqmkNc3NpY6aPb3BgdqDa08oTme/view?usp=sharing"
+                download="Tio_Andriyanto_CV.pdf"
+              >
                 Download My CV
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -234,8 +273,14 @@ export default function Portfolio() {
             <div className="flex gap-4">
               {[
                 { icon: <Twitter className="w-5 h-5" />, href: "#" },
-                { icon: <Linkedin className="w-5 h-5" />, href: "#" },
-                { icon: <Github className="w-5 h-5" />, href: "#" },
+                {
+                  icon: <Linkedin className="w-5 h-5" />,
+                  href: "https://www.linkedin.com/in/tioandriyanto",
+                },
+                {
+                  icon: <Github className="w-5 h-5" />,
+                  href: "https://github.com/Tioandriyanto",
+                },
                 {
                   icon: <Mail className="w-5 h-5" />,
                   href: "mailto:thyoandry.dev@gmail.com",
@@ -256,10 +301,16 @@ export default function Portfolio() {
             <motion.div className="text-gray-400 text-sm" variants={item}>
               <p>© 2024 Tio Andriyanto</p>
               <div className="flex gap-4">
-                <Link href="#" className="hover:text-white transition-colors">
+                <Link
+                  href="https://policies.google.com/privacy?hl=en-US"
+                  className="hover:text-white transition-colors"
+                >
                   Privacy
                 </Link>
-                <Link href="#" className="hover:text-white transition-colors">
+                <Link
+                  href="https://policies.google.com/terms?hl=en-US"
+                  className="hover:text-white transition-colors"
+                >
                   Terms
                 </Link>
               </div>
@@ -337,6 +388,7 @@ export default function Portfolio() {
                   <div
                     className={`absolute inset-0 bg-gradient-to-br ${project.color} opacity-20 group-hover:opacity-70 transition-opacity duration-300`}
                   />
+                  {/* image project */}
                   <Image
                     src={project.image || "/placeholder.svg"}
                     alt={project.title}
@@ -390,7 +442,7 @@ export default function Portfolio() {
                   position: "Computer programming assistant",
                   period: "August 2024 – Present",
                   description:
-                    "Assist lecturers in practical courses when carrying out learning in the laboratory. Manage and maintain laboratory equipment to ensure efficient and safe operation.",
+                    "Assist lecturers in practical courses when carrying out learning in the laboratory. -Manage and maintain laboratory equipment to ensure efficient and safe operation.",
                 },
                 {
                   company: "SEMACI WALISONGO SEMARANG",
@@ -442,7 +494,7 @@ export default function Portfolio() {
             transition={{ delay: 0.9 }}
           >
             <div className="flex justify-between items-center mb-6">
-              <h2 className="text-2xl font-mono">My Stack</h2>
+              <h2 className="text-2xl font-mono">Tech Stack</h2>
               <Button variant="ghost" size="icon" className="text-white">
                 <ArrowRight className="w-5 h-5" />
               </Button>
@@ -486,9 +538,19 @@ export default function Portfolio() {
                 Have a project in mind? Let's discuss how I can help secure your
                 backend systems.
               </p>
-              <Button className="bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 border-0">
+              {/* <Button className="bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 border-0">
+                Get in Touch <Mail className="ml-2 w-4 h-4" />
+              </Button> */}
+
+              <Button
+                onClick={() =>
+                  (window.location.href = "mailto:thyoandry.dev@gmail.com.com")
+                }
+                className="bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 border-0 text-white px-4 py-2 rounded flex items-center"
+              >
                 Get in Touch <Mail className="ml-2 w-4 h-4" />
               </Button>
+
               <Button
                 variant="ghost"
                 size="icon"
@@ -564,8 +626,14 @@ export default function Portfolio() {
             <div className="flex gap-3">
               {[
                 { icon: <Twitter className="w-4 h-4" />, href: "#" },
-                { icon: <Linkedin className="w-4 h-4" />, href: "#" },
-                { icon: <Github className="w-4 h-4" />, href: "#" },
+                {
+                  icon: <Linkedin className="w-4 h-4" />,
+                  href: "https://www.linkedin.com/in/tioandriyanto",
+                },
+                {
+                  icon: <Github className="w-4 h-4" />,
+                  href: "https://github.com/Tioandriyanto",
+                },
                 { icon: <Terminal className="w-4 h-4" />, href: "#" },
               ].map((social, index) => (
                 <Button
@@ -635,7 +703,7 @@ export default function Portfolio() {
             <div className="flex">
               <input
                 type="email"
-                placeholder="thyoandry.dev@gmail.com"
+                placeholder="your email"
                 className="bg-gray-800 rounded-l-md px-4 py-2 text-sm focus:outline-none focus:ring-1 focus:ring-blue-500 w-full"
               />
               <Button className="rounded-l-none bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600">
