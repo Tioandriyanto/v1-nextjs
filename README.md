@@ -1,2 +1,2 @@
-# my fist portofolio with next js
+# my first portofolio website build with next js 
  
