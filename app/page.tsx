@@ -1,5 +1,6 @@
 "use client";
 
+import { Instagram } from "lucide-react";
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -41,6 +42,27 @@ const projects = [
   },
   {
     id: 3,
+    title: "Soul-u",
+    category: "Mobile Apps",
+    image: "/placeholder.svg?height=400&width=400",
+    color: "from-red-500 to-orange-500",
+  },
+  {
+    id: 4,
+    title: "Soul-u",
+    category: "Mobile Apps",
+    image: "/placeholder.svg?height=400&width=400",
+    color: "from-red-500 to-orange-500",
+  },
+  {
+    id: 5,
+    title: "Soul-u",
+    category: "Mobile Apps",
+    image: "/placeholder.svg?height=400&width=400",
+    color: "from-red-500 to-orange-500",
+  },
+  {
+    id: 6,
     title: "Soul-u",
     category: "Mobile Apps",
     image: "/placeholder.svg?height=400&width=400",
@@ -180,11 +202,19 @@ export default function Portfolio() {
                 delay: 0.2,
               }}
             >
-              <Image
+              {/* <Image
                 src="/foto_formal.jpg?height=120&width=120"
                 alt="Profile"
                 width={60}
                 height={60}
+                className="rounded-full border-2 border-blue-500 p-1"
+              /> */}
+              {/* Update scalle  */}
+              <Image
+                src="/foto_formal.jpg"
+                alt="Profile"
+                width={130}
+                height={130}
                 className="rounded-full border-2 border-blue-500 p-1"
               />
             </motion.div>
@@ -272,14 +302,18 @@ export default function Portfolio() {
           >
             <div className="flex gap-4">
               {[
-                { icon: <Twitter className="w-5 h-5" />, href: "#" },
                 {
                   icon: <Linkedin className="w-5 h-5" />,
                   href: "https://www.linkedin.com/in/tioandriyanto",
                 },
+
                 {
                   icon: <Github className="w-5 h-5" />,
                   href: "https://github.com/Tioandriyanto",
+                },
+                {
+                  icon: <Instagram className="w-5 h-5" />,
+                  href: "https://instagram.com/thyoandry",
                 },
                 {
                   icon: <Mail className="w-5 h-5" />,
@@ -442,7 +476,7 @@ export default function Portfolio() {
                   position: "Computer programming assistant",
                   period: "August 2024 – Present",
                   description:
-                    "Assist lecturers in practical courses when carrying out learning in the laboratory. -Manage and maintain laboratory equipment to ensure efficient and safe operation.",
+                    "Assist lecturers in practical courses when carrying out learning in the laboratory. Manage and maintain laboratory equipment to ensure efficient and safe operation.",
                 },
                 {
                   company: "SEMACI WALISONGO SEMARANG",
@@ -625,7 +659,11 @@ export default function Portfolio() {
             </p>
             <div className="flex gap-3">
               {[
-                { icon: <Twitter className="w-4 h-4" />, href: "#" },
+                {
+                  icon: <Instagram className="w-4 h-4" />,
+                  href: "https://instagram.com/thyoandry",
+                },
+
                 {
                   icon: <Linkedin className="w-4 h-4" />,
                   href: "https://www.linkedin.com/in/tioandriyanto",
@@ -634,7 +672,10 @@ export default function Portfolio() {
                   icon: <Github className="w-4 h-4" />,
                   href: "https://github.com/Tioandriyanto",
                 },
-                { icon: <Terminal className="w-4 h-4" />, href: "#" },
+                {
+                  icon: <Terminal className="w-4 h-4" />,
+                  href: "https://www.warp.dev/linux-terminal?gad_source=1&gbraid=0AAAAAoTBvvoE1Xw-II8Y3pK1-hBOfd35k&gclid=CjwKCAjw8IfABhBXEiwAxRHlsKmqRefWM0OrQBIB4IQFn5Ra6ACbyfd_KqjpWhqDJ5uH3mB_Euev_xoChUIQAvD_BwE",
+                },
               ].map((social, index) => (
                 <Button
                   key={index}

@@ -1,21 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
-// export const metadata: Metadata = {
-//   title: 'Personal Website',
-//   icons: {
-//     icon: '/favicon.ico',
-//     shortcut: '/favicon.ico',
-//     apple: '/favicon.ico',
-//   },
-//   description: 'Created with Next.js 13.4.4',
-//   keywords: 'Next.js, React, TypeScript',
-//   generator: 'Next.js dev',
-
-// }
-
 export const metadata: Metadata = {
-  title: "Personal Website",
+  title: "Tio Andriyanto",
   description: "Created with Next.js 13.4.4",
   keywords: "Next.js, React, TypeScript",
   generator: "Next.js dev",
