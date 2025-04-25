@@ -42,7 +42,7 @@ cd v1-nextjs
 npm install
 3. Jalankan proyek
 npm run dev
- 
+  
 Buka http://localhost:3000 di browser Anda.
 
 📬 Kontak
