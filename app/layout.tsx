@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     ],
   },
 };
-//   authors: [ Tio Andriyanto ],
+//   authors: [ @Tio Andriyanto ],
 
 export default function RootLayout({
   children,
