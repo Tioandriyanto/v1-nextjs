@@ -5,7 +5,7 @@ Website ini dibuat menggunakan [Next.js](https://nextjs.org/) dan dapat diakses 
  
 ## 🧩 Fitur Utama 
  
-- **Halaman Tentang Saya**: Informasi pribadi dan latar belakang.
+- **Halaman Tentang Saya**: Informasi pribadi dan latar belakang. 
 - **Proyek-Proyek**: Daftar proyek yang telah saya kerjakan.
 - **Experience**: Daftar Pengalaman yang telah saya lalui.
 - **Kontak**: Informasi untuk menghubungi saya.
