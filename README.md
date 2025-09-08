@@ -8,7 +8,7 @@ Website ini dibuat menggunakan [Next.js](https://nextjs.org/) dan dapat diakses 
 - **Halaman Tentang Saya**: Informasi pribadi dan latar belakang.
 - **Proyek-Proyek**: Daftar proyek yang telah saya kerjakan.
 - **Experience**: Daftar Pengalaman yang telah saya lalui.
-- **Kontak**: Informasi untuk menghubungi saya. 
+- **Kontak**: Informasi untuk menghubungi saya.
 - **Desain Responsif**: Tampilan yang optimal di berbagai perangkat.
  
 ## 🛠️ Teknologi yang Digunakan
