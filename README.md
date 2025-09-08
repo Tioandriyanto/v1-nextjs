@@ -2,7 +2,7 @@
       
 Selamat datang di portofolio pribadi saya! 🎉    
 Website ini dibuat menggunakan [Next.js](https://nextjs.org/) dan dapat diakses melalui:  [thyoandry.vercel.app](https://thyoandry.vercel.app)
-  
+   
 ## 🧩 Fitur Utama 
  
 - **Halaman Tentang Saya**: Informasi pribadi dan latar belakang. 
