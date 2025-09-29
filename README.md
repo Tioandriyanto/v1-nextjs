@@ -44,7 +44,7 @@ npm install
 npm run dev
   
 Buka http://localhost:3000 di browser Anda.
-
+ 
 📬 Kontak
 Jika Anda ingin terhubung lebih lanjut:
 
