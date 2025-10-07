@@ -10,7 +10,7 @@ Website ini dibuat menggunakan [Next.js](https://nextjs.org/) dan dapat diakses 
 - **Experience**: Daftar Pengalaman yang telah saya lalui.
 - **Kontak**: Informasi untuk menghubungi saya. 
 - **Desain Responsif**: Tampilan yang optimal di berbagai perangkat.
- 
+  
 ## 🛠️ Teknologi yang Digunakan
 
 - [Next.js](https://nextjs.org/)
